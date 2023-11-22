@@ -1,12 +1,22 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   /* padding: 2rem; */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 /* master is everything except the navbar */
 .master{
+  background: transparent;
+  align-items: center;
+  align-content: center;
+  align-self: center;
   padding: 2rem;
+  width: 100%;
+  max-width: 1280px; 
+  text-align: center;
 }
 .logo {
   height: 6em;

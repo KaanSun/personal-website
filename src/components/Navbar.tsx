@@ -12,7 +12,7 @@ function Navigator() {
     
     function scrollLock() {
         console.log(window.scrollY);
-        if (window.scrollY <= 350) {
+        if (window.scrollY <= 200) {
             if (stick !== "sticky") {
                 setStick("sticky");
             console.log("something");
@@ -36,7 +36,7 @@ function Navigator() {
   return (
     <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary" id={stick}>
       <Container>
-        <Navbar.Brand href="#home">Kaan Sun</Navbar.Brand>
+        <Navbar.Brand href="/">Kaan Sun</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
