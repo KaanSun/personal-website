@@ -1,15 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import Header from './components/Header.tsx'
+import Navbar from './components/Navbar.tsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <Header />
+    <Navbar />
     <App />
-    
+    <App />
+    <App />
+  
   </React.StrictMode>,
 )
