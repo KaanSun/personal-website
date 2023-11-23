@@ -1,11 +1,15 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/LandingPage';
+import Navbar from './components/Navbar.tsx'
+import './index.css'
 
 function App() {
 
   return (
-    <>
+    <div className="root">
+        <Navbar />
+
     <BrowserRouter>
         
         <Routes>
@@ -17,7 +21,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-    </>
+    </div>
   )
 }
 

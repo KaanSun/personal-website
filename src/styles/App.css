@@ -32,16 +32,8 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.fadeLandingTitle {
-  animation: fadeInOut 3s;
-}
 
-@keyframes fadeInOut {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
-  
-}
+
 
 @keyframes logo-spin {
   from {
