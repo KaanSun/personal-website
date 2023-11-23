@@ -14,7 +14,7 @@ function LandingPage() {
    
     return (
 
-        <div>
+        <div className="landing">
                 <Background />
             <div className="master">
             <div>

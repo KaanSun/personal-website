@@ -8,6 +8,13 @@
   flex-direction: column;
 }
 /* master is everything except the navbar */
+.landing{
+display: flex;
+justify-content: center;
+flex-direction: column;
+overflow: hidden;
+}
+
 .master{
   background: transparent;
   align-items: center;

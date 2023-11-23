@@ -7,7 +7,7 @@ import './index.css'
 function App() {
 
   return (
-    <div className="root">
+    <>
         <Navbar />
 
     <BrowserRouter>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       
-    </div>
+    </>
   )
 }
 
