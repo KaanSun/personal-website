@@ -11,16 +11,13 @@ function Navigator() {
 
     
     function scrollLock() {
-        console.log(window.scrollY);
         if (window.scrollY <= 200) {
             if (stick !== "sticky") {
                 setStick("sticky");
-            console.log("something");
             }
             
         } else {
             setStick("null");
-
         }
       }
 

@@ -18,6 +18,7 @@
   max-width: 1280px; 
   text-align: center;
 }
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -31,6 +32,17 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.fadeLandingTitle {
+  animation: fadeInOut 3s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+  
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -39,6 +51,9 @@
     transform: rotate(360deg);
   }
 }
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
