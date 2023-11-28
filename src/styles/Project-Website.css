@@ -1,0 +1,37 @@
+.standard-margin{
+    padding-top: 120px;
+}
+
+p{
+    color: white;
+    font-size: large;
+    text-align:left;
+    padding-left: 4%;
+    padding-top: 5px;
+}
+
+pre{
+    background-color: black;
+    width: 90%;
+    
+}
+
+.standard-code-block{
+    margin: auto;
+    border-radius: 15px;
+    width: 80% ;
+    background-color: black;
+    text-align: left;
+}
+
+.github-link{
+    position: fixed;
+    margin-left: 30px;
+    bottom: 60px;
+    right: 30px;
+    width: 5rem;
+}
+
+.github-link:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
