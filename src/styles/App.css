@@ -27,10 +27,15 @@ overflow: hidden;
 }
 
 .logo {
+  visibility: hidden;
+  width: auto;
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+}
+.logo.react{
+  visibility: visible;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -51,7 +56,14 @@ overflow: hidden;
   }
 }
 
+.github-link.landing {
+  position: absolute;
+  width: 100px;
 
+}
+.link {
+  width: max-content;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -65,7 +77,7 @@ overflow: hidden;
   background-color: black;
 }
 
-.
+
 
 .read-the-docs {
   color: #888;

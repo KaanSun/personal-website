@@ -18,21 +18,26 @@ function LandingPage() {
      
             
             <h1>About Me</h1>
+            <h3>Kaan Sun</h3>
             <div className="container ">
                 <div className='row justify-content-center'>
-                    <div className='col'></div>
-                    <a className="col">asdasdasdasdasddas</a>
+                    <div className='col'>Computer Science Student with a strong interest in software development, artificial intelligence, and
+physics</div>
+                    <a className="col" href="https://github.com/KaanSun/personal-website">
+                    <img className="github-link landing" src="src/assets/github-white.png" alt="Github Repository of this Website" />
+                    </a>
                 </div>
             </div>
            
 
-            <a href="https://vitejs.dev" target="_blank">
+            
+        </div>
+        <a className="link" href="https://vitejs.dev" target="_blank">
                 <img src={viteLogo} className="logo" alt="Vite logo" />
             </a>
-            <a href="https://react.dev" target="_blank">
+            <a className="link" href="https://react.dev" target="_blank">
                 <img src={reactLogo} className="logo react" alt="React logo" />
             </a>
-        </div>
       </div>
     )
 
