@@ -1,5 +1,3 @@
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
 import Background from '../components/Background.tsx'
 import '../styles/App.css'
 
