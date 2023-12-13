@@ -1,13 +1,13 @@
 import { useState, useEffect, useCallback} from 'react'
 
 import "../styles/Background.css"
-function Background() {
+function FlashingTextDemo() {
 
      // ------------------------------------- HEADER ANIMATION -------------------------------------
 
     // this all will look super confusing but it is the way it is due to how terrible css animations are
 
-    const differentHeaders = ["I am your personal website", "What are we doing?" ,"\"There is no law except the law that there is no law.\""]
+    const differentHeaders = ["I am your personal website", "What are we doing?"]
     var headerArrayIndex = 0;
 
 
@@ -31,11 +31,11 @@ function Background() {
     setFading("none");
     
     requestAnimationFrame(()=>{
-      setFading("fadeInOut 4s")
+      setFading("fadeInOut 3s")
       setVisibility(visibilityStates.visible)
     })
     
-    const changeTimer = setTimeout(changeText, 4000);
+    const changeTimer = setTimeout(changeText, 3000);
     return () => clearTimeout(changeTimer)
   }, [headerText, changeText]);
     // ----------------------------------------------------------------------------------------
@@ -43,16 +43,13 @@ function Background() {
 
     return (
         <div className='bg'>
-            <img id="bg" src="src/assets/stars.jpg" alt="hi" />
-            <h1 className="landing-page-header">
 
             {/* <span className={is}> {"landing-page-yellow-header fadeLandingTitle"} */}
             <span className={"landing-page-yellow-header fadeLandingTitle"} style={{animation: fadingState, visibility: visibilityState}}> 
             {headerText}
             </span>
-            </h1>
         </div>
         
     );
 }
-export default Background
+export default FlashingTextDemo

@@ -1,4 +1,4 @@
-//import Prism from "prismjs";
+import FlashingText from '../components/Flashing-Text-Demo'
 import "../index.css"
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
@@ -97,22 +97,51 @@ function ProjectWebsite() {
             {code2}
             </SyntaxHighlighter>
 
-            <p>This is the typescript code that runs the flashing texts at the landing page. You will realize there are many odd things about this code, so I will go over them with you:</p>
-            <h3>Basics</h3>
-            <p>The first version of the code was very simple. The typescript component would define a timeout for 3 seconds and change the 
-              text every 3 seconds using a callback function (it would iterate through an array of cool messages). All of the different cool messages were either stored in the tsx file itself
-              as a const, or in a database elsewhere. In the css file, there would be a custom css animation that would have a length of 3 seconds and would change
-              the opacity of the text so it is invisible at every time when the text was changing (so that user cannot see the text changing while it was visible).
-              </p>
+            <h6>This is the typescript code that runs the flashing texts at the landing page. </h6>
 
-            <p> There is one slight issue with this system. The way css time works is simple. It would run the animation at exactly
-              every 3 seconds starting from when the page renders. At the first run, the text change and the animation opacity would perfectly 
-              align and you wouldn't be able to see the text changing while it was visible. But as time goes on, it would get out of sync with the
-              animation. The reason for this is simple. Javascript sets a timeout for 3 seconds, it runs the state function that changes the text, and
-              only when that funcion has executed, it would set another timeout for 3 seconds. So the exact time the text stays on screen is the 
-              3 second timeout <b>plus</b> the time it takes for the function to execute. This is because we are using callback functions instead
-              of a loop that calls a cerain function every 3 seconds.
+            <h5>This animation uses no external 
+              libraries. Pure CSS and Javascript.
+              </h5>
+            
+            <h1>Basics</h1>
+            <p> The initial code version is very straightforward. The TypeScript component set a 3-second timeout and utilized a 
+              callback function to cycle through an array of different messages, updating the text every 3 seconds. These messages
+               were stored either as a constant directly in the TSX file or in an external database. The accompanying CSS file featured
+                a custom animation lasting 3 seconds, adjusting the text's opacity to make it invisible during each transition. 
+                This ensured that users couldn't see the text changing while it was visible.
+              </p>
+              <h1><FlashingText /></h1>
+
+              <h3> The expected model: </h3>
+
+              <img className="profile-picture-big" src="src/assets/Slide1.jpeg" alt="Figure 1.1" />
+
+
+            <p> There's a minor problem in this system. The way CSS time functions is simple, it plays the animation
+               every 3 seconds, starting from when the page loads. Initially, the text change and the opacity animation sync up 
+               perfectly, concealing the text change while it's visible. However, over time, it falls out of sync with the 
+               animation. The reason behind this is clear: JavaScript sets a timeout for 3 seconds, triggers the state 
+               function that alters the text, and only after that function completes does it set another 3-second timeout. 
+               So, the actual time the text remains on screen is the 3-second timeout <b>plus</b> the time it takes for the function 
+               to run. This occurs because we're using callback functions instead of a loop that invokes a specific 
+               function every 3 seconds.
             </p>
+            <h3> Actual Model &#40;Before fix&#41;	: </h3>
+
+            <img className="profile-picture-big" src="src/assets/Slide2.jpeg" alt="Figure 1.2" />
+
+            <p> There are several solutions that can be utilized to fix this problem. However, there is one particular solution
+              that will make sure this animation works as intended on all machines. Whenever the timeout ends and the function is ran,
+              the text element will be assigned 'visibility:none'. When the text is changed, React will force CSS to re-render
+              the animation. This will make sure the text change is hidden, no matter what problem occurs in the client system. The
+              visual animation will run as long as the React runs. This way, the animation doesn't depend on a particular measurement of time.
+              It will run as fast as the client machine can handle, plus the 3-second timeout.
+            </p>
+
+            <h3> Revised Model: </h3>
+
+            <img className="profile-picture-big" src="src/assets/Slide3.jpeg" alt="Figure 1.3" />
+
             <a href="https://github.com/KaanSun/personal-website">
              <img className="github-link" src="src/assets/github-white.png" alt="Github Repository of this Website" />
              </a>
