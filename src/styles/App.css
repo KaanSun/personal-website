@@ -78,8 +78,13 @@ overflow: hidden;
   background-color: black;
 }
 
-
-
 .read-the-docs {
   color: #888;
+}
+
+.generic-card{
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #120d21;
+  height: max-content;  
 }

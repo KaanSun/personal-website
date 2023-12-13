@@ -22,22 +22,23 @@ function LandingPage() {
             <div className="container ">
                 <div className='row justify-content-center'>
                     <div className='col'>
-                        <p> Computer Science Student with a strong interest in software development, artificial intelligence, and physics</p>
-                        <img className="profile-picture-big" src="src/assets/ks.png" alt="a picture of me" />
+                        <div className='generic-card'>
+                            <p> Computer Science Student with a strong interest in software development, artificial intelligence, and physics</p>
+                            <img className="profile-picture-big" src="src/assets/ks.png" alt="a picture of me" />
+                        </div>
                     </div>       
                     <div className='col'>
-                        <p>Currently attending School of Computing at:</p>
-                        <a href="https://www.cs.queensu.ca/"><h1>Queen's University</h1></a>
-                        <br />
-                        <br />
-                        <p>GitHub account can be found <a href="https://github.com/KaanSun">here</a> or bottom right side of this page.</p>
-                        <br />
-                        <br />
-                        <p>Thank you for visiting!</p>
-                        <br />
-                        <br />
+                        <div className='generic-card items-center'>
+                            <p>Currently attending School of Computing at:</p>
+                            <br />
+                            <a href="https://www.cs.queensu.ca/"><h2>Queen's University</h2></a>                          
+                            <br />
+                            <br />
+                            <p>GitHub account can be found <a href="https://github.com/KaanSun">here</a> or bottom right side of this page.</p>
+                            <br />
+                            <p>Thank you for visiting!</p>
+                        </div>
                     </div>
-                    
                 </div>
             </div>
                         <a className=" " href="https://github.com/KaanSun/">
@@ -47,12 +48,6 @@ function LandingPage() {
 
             
         </div>
-        <a className="link" href="https://vitejs.dev" target="_blank">
-                <img src={viteLogo} className="logo" alt="Vite logo" />
-            </a>
-            <a className="link" href="https://react.dev" target="_blank">
-                <img src={reactLogo} className="logo react" alt="React logo" />
-            </a>
       </div>
     )
 
