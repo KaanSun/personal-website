@@ -1,15 +1,33 @@
 import { useState, useEffect, useCallback} from 'react'
+import { messages } from '../data/messages';
 
-import "../styles/Background.css"
+import "../styles/Background.css";
 function Background() {
 
-     // ------------------------------------- HEADER ANIMATION -------------------------------------
+
+  // ------------------------------------- SHUFFLE LIST -------------------------------------
+
+  function shuffleList(list: string[]): string[] {
+    const shuffledList = [...list];
+    for (let i = shuffledList.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledList[i], shuffledList[j]] = [shuffledList[j], shuffledList[i]];
+    }
+    return shuffledList;
+  }
+
+
+
+
+  // ------------------------------------- HEADER ANIMATION -------------------------------------
 
     // this all will look super confusing but it is the way it is due to how terrible css animations are
 
-    const differentHeaders = ["I am your personal website", "What are we doing?" ,"\"There is no law except the law that there is no law.\""]
+    
+    const differentHeaders = shuffleList(messages);
     var headerArrayIndex = 0;
 
+    
 
     // have to have css visibility states as enum in typescript
     enum visibilityStates {

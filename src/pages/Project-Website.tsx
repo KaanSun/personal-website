@@ -84,7 +84,8 @@ function ProjectWebsite() {
             <p className=" ">This website was primarily made to display my projects, and act as a journal to keep track of what 
             I have learned. However, there was a lot of cool things I came across so I would like to share some of them.</p>
 
-            <p>The website is open source. You can check it out <a href="https://github.com/KaanSun/personal-website">here</a> or at the bottom right side of this page</p>
+            <p>The website is open source. You can check it out <a href="https://github.com/KaanSun/personal-website">here</a> or 
+            at the bottom right side of this page. This website was made using React framework using Typescript.</p>
             
             <h3 className="text-white">Some Cool Snippets</h3>
 
