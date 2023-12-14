@@ -61,7 +61,7 @@ function Background() {
 
     return (
         <div className='bg'>
-            <img id="bg" src="src/assets/stars.jpg" alt="hi" />
+            <img id="bg" src="/assets/stars.jpg" alt="hi" />
             <h1 className="landing-page-header">
 
             {/* <span className={is}> {"landing-page-yellow-header fadeLandingTitle"} */}

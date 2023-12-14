@@ -115,7 +115,7 @@ function ProjectWebsite() {
 
               <h3> The expected model: </h3>
 
-              <img className="profile-picture-big" src="src/assets/Slide1.jpeg" alt="Figure 1.1" />
+              <img className="profile-picture-big" src="/assets/Slide1.jpeg" alt="Figure 1.1" />
 
 
             <p> There's a minor problem in this system. The way CSS time functions is simple, it plays the animation
@@ -129,7 +129,7 @@ function ProjectWebsite() {
             </p>
             <h3> Actual Model &#40;Before fix&#41;	: </h3>
 
-            <img className="profile-picture-big" src="src/assets/Slide2.jpeg" alt="Figure 1.2" />
+            <img className="profile-picture-big" src="/assets/Slide2.jpeg" alt="Figure 1.2" />
 
             <p> There are several solutions that can be utilized to fix this problem. However, there is one particular solution
               that will make sure this animation works as intended on all machines. Whenever the timeout ends and the function is ran,
@@ -141,10 +141,10 @@ function ProjectWebsite() {
 
             <h3> Revised Model: </h3>
 
-            <img className="profile-picture-big" src="src/assets/Slide3.jpeg" alt="Figure 1.3" />
+            <img className="profile-picture-big" src="/assets/Slide3.jpeg" alt="Figure 1.3" />
 
             <a href="https://github.com/KaanSun/personal-website">
-             <img className="github-link" src="src/assets/github-white.png" alt="Github Repository of this Website" />
+             <img className="github-link" src="/assets/github-white.png" alt="Github Repository of this Website" />
              </a>
         </div>
     );

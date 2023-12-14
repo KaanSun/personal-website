@@ -90,7 +90,7 @@ function NLPHackathon() {
             <p>Interesting that there are always more type II errors than type I errors. Perhaps I can 
                 investigate the reason for this some day. Might be due to some parameters on our model 
                 &#40;maybe the level of significance?&#41;	 .</p>
-            <img className='profile-picture-big' src="src/assets/confusion.png" alt="" />
+            <img className='profile-picture-big' src="/assets/confusion.png" alt="" />
            
         </div>
     );

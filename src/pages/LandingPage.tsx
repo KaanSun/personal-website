@@ -22,7 +22,7 @@ function LandingPage() {
                     <div className='col'>
                         <div className='generic-card'>
                             <p> Computer Science Student with a strong interest in software development, artificial intelligence, and physics</p>
-                            <img className="profile-picture-big" src="src/assets/ks.png" alt="a picture of me" />
+                            <img className="profile-picture-big" src="/assets/ks.png" alt="a picture of me" />
                         </div>
                     </div>       
                     <div className='col'>
@@ -40,7 +40,7 @@ function LandingPage() {
                 </div>
             </div>
                         <a className=" " href="https://github.com/KaanSun/">
-                        <img className="github-link" src="src/assets/github-white.png" alt="My Github Account" />
+                        <img className="github-link" src="/assets/github-white.png" alt="My Github Account" />
                         </a>
            
 
